@@ -1,0 +1,94 @@
+.wrapper {
+  height: 100vh;
+  background-image: url("/public/2023cs.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.left {
+  padding: 20px;
+  background-color: #40168f00;
+  color: #ce8c8c;
+}
+
+.logo {
+  font-size: 44px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.button {
+  display: inline-block;
+  position: relative;
+}
+
+.button nav {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.button:hover nav {
+  display: block;
+}
+
+.button nav a {
+  display: block;
+  background-color: #9d161628;
+  color: #1e1e1e;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  border-bottom: 10px rgb(rgb(176, 69, 69), green, blue) #ccc;
+}
+
+.button nav a:last-child {
+  border-bottom: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: #1e1e1e;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  padding: 20px;
+  background-color: #f7f7f7;
+  color: #b3ab34;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer {
+  background-color: #1e1e1e;
+  color: #617a15;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer a {
+  color: #d4d6b0;
+  text-decoration: none;
+  margin-bottom: 1%;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
